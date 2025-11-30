@@ -89,16 +89,20 @@
 
     // Add to cart functionality with accessibility feedback
     function initAddToCart() {
-        const addToCartButtons = document.querySelectorAll('[aria-label*="Add"][aria-label*="to cart"]');
+        const addToCartButtons = document.querySelectorAll('.btn-secondary');
         
         addToCartButtons.forEach(function(button) {
+            // Only handle buttons that are "Add to Cart" buttons
+            const ariaLabel = button.getAttribute('aria-label');
+            if (!ariaLabel || !ariaLabel.includes('to cart')) return;
+            
             button.addEventListener('click', function() {
                 const originalText = button.textContent;
                 button.textContent = 'Added!';
                 button.disabled = true;
                 
                 // Get product name from aria-label
-                const productName = button.getAttribute('aria-label').replace('Add ', '').replace(' to cart', '');
+                const productName = ariaLabel.replace('Add ', '').replace(' to cart', '');
                 announceToScreenReader(productName + ' has been added to your cart.');
                 
                 // Reset button after 2 seconds

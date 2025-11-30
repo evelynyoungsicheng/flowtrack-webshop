@@ -435,8 +435,13 @@ header {
 }
 
 .product-card:hover {
-    transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .product-card:hover {
+        transform: translateY(-4px);
+    }
 }
 
 .product-card:focus-within {
