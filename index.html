@@ -1,281 +1,67 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="FlowTrack - Your trusted online store for productivity tools and accessories">
-    <title>FlowTrack Webshop - Home</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Using Google Fonts - Open Source (SIL Open Font License) -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowTrack Pro – Webshop</title>
+  <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    
-    <header role="banner">
-        <div class="container header-content">
-            <div class="logo">
-                <a href="index.html" aria-label="FlowTrack Home">
-                    <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
-                        <circle cx="20" cy="20" r="18" fill="#2563EB"/>
-                        <path d="M12 20 L18 26 L28 14" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span class="logo-text">FlowTrack</span>
-                </a>
-            </div>
-            <nav role="navigation" aria-label="Main navigation">
-                <button type="button" class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">
-                    <span class="hamburger"></span>
-                </button>
-                <ul id="main-nav" class="nav-list">
-                    <li><a href="index.html" aria-current="page">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="accessibility.html">Accessibility</a></li>
-                </ul>
-            </nav>
+  <header>
+    <nav class="navbar">
+      <div class="logo">FlowTrack Pro</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="about.html">Über uns</a></li>
+        <li><a href="license.html">Lizenz</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Steigere deine Produktivität </br> mit FlowTrack Pro</h1>
+      <p>Die All-in-One Workflow- und Produktivitätssoftware für Studierende, Einzelunternehmer und kleine Teams.</p>
+      <a href="#pricing" class="cta-btn">Jetzt starten</a>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+      <h2>Unsere Tarife</h2>
+      <div class="pricing-grid">
+        <div class="card">
+          <h3>Gratis-Version</h3>
+          <p class="price">€0 / Monat</p>
+          <ul>
+            <li>Grundlegendes Aufgabenmanagement</li>
+            <li>1 Arbeitsbereich</li>
+            <li>Community-Support</li>
+          </ul>
+          <button>Kostenlos starten</button>
         </div>
-    </header>
-
-    <main id="main-content" role="main">
-        <!-- Hero Section -->
-        <section class="hero" aria-labelledby="hero-heading">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 id="hero-heading">Boost Your Productivity</h1>
-                    <p class="hero-subtitle">Discover premium tools and accessories designed to help you work smarter, not harder.</p>
-                    <a href="products.html" class="btn btn-primary">Shop Now</a>
-                </div>
-                <div class="hero-image" role="img" aria-label="Person working at an organized desk with productivity tools">
-                    <!-- Decorative illustration using CSS/SVG -->
-                    <svg width="400" height="300" viewBox="0 0 400 300" aria-hidden="true" focusable="false" class="hero-illustration">
-                        <!-- Desk -->
-                        <rect x="50" y="200" width="300" height="20" fill="#374151" rx="4"/>
-                        <rect x="70" y="220" width="20" height="60" fill="#374151"/>
-                        <rect x="310" y="220" width="20" height="60" fill="#374151"/>
-                        <!-- Monitor -->
-                        <rect x="130" y="100" width="140" height="90" fill="#1F2937" rx="4"/>
-                        <rect x="140" y="110" width="120" height="70" fill="#3B82F6"/>
-                        <rect x="190" y="190" width="20" height="15" fill="#374151"/>
-                        <!-- Keyboard -->
-                        <rect x="120" y="170" width="80" height="25" fill="#4B5563" rx="2"/>
-                        <!-- Coffee cup -->
-                        <ellipse cx="320" cy="170" rx="20" ry="8" fill="#78350F"/>
-                        <rect x="300" y="170" width="40" height="30" fill="#78350F" rx="2"/>
-                        <!-- Plant -->
-                        <rect x="80" y="160" width="25" height="40" fill="#78350F"/>
-                        <ellipse cx="92" cy="150" rx="25" ry="20" fill="#10B981"/>
-                        <!-- Notebook -->
-                        <rect x="240" y="165" width="40" height="35" fill="#FBBF24" rx="2"/>
-                        <line x1="248" y1="175" x2="272" y2="175" stroke="#78350F" stroke-width="2"/>
-                        <line x1="248" y1="185" x2="272" y2="185" stroke="#78350F" stroke-width="2"/>
-                    </svg>
-                </div>
-            </div>
-        </section>
-
-        <!-- Featured Products Section -->
-        <section class="featured-products" aria-labelledby="featured-heading">
-            <div class="container">
-                <h2 id="featured-heading">Featured Products</h2>
-                <div class="products-grid" role="list">
-                    <!-- Product Card 1 -->
-                    <article class="product-card" role="listitem">
-                        <div class="product-image">
-                            <svg width="200" height="150" viewBox="0 0 200 150" aria-hidden="true" focusable="false">
-                                <rect width="200" height="150" fill="#E5E7EB"/>
-                                <rect x="50" y="40" width="100" height="70" fill="#3B82F6" rx="4"/>
-                                <rect x="75" y="110" width="50" height="15" fill="#1F2937"/>
-                            </svg>
-                        </div>
-                        <div class="product-info">
-                            <h3><a href="products.html#desk-organizer">Ergonomic Monitor Stand</a></h3>
-                            <p class="product-description">Adjustable height monitor stand with storage compartments for improved posture.</p>
-                            <p class="product-price"><span class="visually-hidden">Price:</span>€49.99</p>
-                            <button type="button" class="btn btn-secondary" aria-label="Add Ergonomic Monitor Stand to cart">Add to Cart</button>
-                        </div>
-                    </article>
-
-                    <!-- Product Card 2 -->
-                    <article class="product-card" role="listitem">
-                        <div class="product-image">
-                            <svg width="200" height="150" viewBox="0 0 200 150" aria-hidden="true" focusable="false">
-                                <rect width="200" height="150" fill="#E5E7EB"/>
-                                <rect x="40" y="50" width="120" height="50" fill="#10B981" rx="4"/>
-                                <rect x="45" y="55" width="110" height="40" fill="#34D399" rx="2"/>
-                                <circle cx="55" cy="75" r="8" fill="#065F46"/>
-                                <circle cx="75" cy="75" r="8" fill="#065F46"/>
-                                <circle cx="95" cy="75" r="8" fill="#065F46"/>
-                            </svg>
-                        </div>
-                        <div class="product-info">
-                            <h3><a href="products.html#keyboard">Mechanical Keyboard</a></h3>
-                            <p class="product-description">Premium mechanical keyboard with customizable backlighting and quiet switches.</p>
-                            <p class="product-price"><span class="visually-hidden">Price:</span>€89.99</p>
-                            <button type="button" class="btn btn-secondary" aria-label="Add Mechanical Keyboard to cart">Add to Cart</button>
-                        </div>
-                    </article>
-
-                    <!-- Product Card 3 -->
-                    <article class="product-card" role="listitem">
-                        <div class="product-image">
-                            <svg width="200" height="150" viewBox="0 0 200 150" aria-hidden="true" focusable="false">
-                                <rect width="200" height="150" fill="#E5E7EB"/>
-                                <ellipse cx="100" cy="80" rx="50" ry="40" fill="#8B5CF6"/>
-                                <circle cx="85" cy="70" r="8" fill="#4C1D95"/>
-                                <circle cx="115" cy="70" r="8" fill="#4C1D95"/>
-                                <path d="M80 100 L100 85 L120 100" fill="none" stroke="#4C1D95" stroke-width="4"/>
-                            </svg>
-                        </div>
-                        <div class="product-info">
-                            <h3><a href="products.html#mouse">Ergonomic Wireless Mouse</a></h3>
-                            <p class="product-description">Vertical design mouse that reduces wrist strain during long work sessions.</p>
-                            <p class="product-price"><span class="visually-hidden">Price:</span>€34.99</p>
-                            <button type="button" class="btn btn-secondary" aria-label="Add Ergonomic Wireless Mouse to cart">Add to Cart</button>
-                        </div>
-                    </article>
-
-                    <!-- Product Card 4 -->
-                    <article class="product-card" role="listitem">
-                        <div class="product-image">
-                            <svg width="200" height="150" viewBox="0 0 200 150" aria-hidden="true" focusable="false">
-                                <rect width="200" height="150" fill="#E5E7EB"/>
-                                <rect x="60" y="30" width="80" height="100" fill="#FBBF24" rx="4"/>
-                                <line x1="70" y1="50" x2="130" y2="50" stroke="#78350F" stroke-width="3"/>
-                                <line x1="70" y1="65" x2="130" y2="65" stroke="#78350F" stroke-width="3"/>
-                                <line x1="70" y1="80" x2="110" y2="80" stroke="#78350F" stroke-width="3"/>
-                                <circle cx="75" cy="110" r="5" fill="#78350F"/>
-                            </svg>
-                        </div>
-                        <div class="product-info">
-                            <h3><a href="products.html#planner">Productivity Planner</a></h3>
-                            <p class="product-description">Daily planner with goal tracking, habit trackers, and reflection prompts.</p>
-                            <p class="product-price"><span class="visually-hidden">Price:</span>€24.99</p>
-                            <button type="button" class="btn btn-secondary" aria-label="Add Productivity Planner to cart">Add to Cart</button>
-                        </div>
-                    </article>
-                </div>
-                <div class="section-cta">
-                    <a href="products.html" class="btn btn-outline">View All Products</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section class="features" aria-labelledby="features-heading">
-            <div class="container">
-                <h2 id="features-heading">Why Choose FlowTrack?</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">
-                            <svg width="48" height="48" viewBox="0 0 48 48" focusable="false">
-                                <circle cx="24" cy="24" r="20" fill="#DBEAFE"/>
-                                <path d="M16 24 L22 30 L32 18" stroke="#2563EB" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h3>Quality Guaranteed</h3>
-                        <p>All products are carefully selected and tested to ensure premium quality.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">
-                            <svg width="48" height="48" viewBox="0 0 48 48" focusable="false">
-                                <circle cx="24" cy="24" r="20" fill="#DCFCE7"/>
-                                <path d="M24 14 L24 26 L32 30" stroke="#16A34A" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h3>Fast Shipping</h3>
-                        <p>Free delivery on orders over €50. Most orders ship within 24 hours.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">
-                            <svg width="48" height="48" viewBox="0 0 48 48" focusable="false">
-                                <circle cx="24" cy="24" r="20" fill="#FEF3C7"/>
-                                <path d="M24 16 L26 22 L32 22 L27 26 L29 32 L24 28 L19 32 L21 26 L16 22 L22 22 Z" fill="#F59E0B"/>
-                            </svg>
-                        </div>
-                        <h3>Customer Support</h3>
-                        <p>Dedicated support team available to help with any questions or concerns.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Newsletter Section -->
-        <section class="newsletter" aria-labelledby="newsletter-heading">
-            <div class="container">
-                <h2 id="newsletter-heading">Stay Updated</h2>
-                <p>Subscribe to our newsletter for exclusive deals and productivity tips.</p>
-                <form class="newsletter-form" action="#" method="post" aria-describedby="newsletter-description">
-                    <p id="newsletter-description" class="visually-hidden">Enter your email address to subscribe to our newsletter.</p>
-                    <div class="form-group">
-                        <label for="email" class="visually-hidden">Email address</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required aria-required="true" autocomplete="email">
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h2>FlowTrack</h2>
-                    <p>Your trusted source for productivity tools and accessories.</p>
-                </div>
-                <div class="footer-section">
-                    <h2>Quick Links</h2>
-                    <nav aria-label="Footer navigation">
-                        <ul>
-                            <li><a href="products.html">Products</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer-section">
-                    <h2>Legal</h2>
-                    <nav aria-label="Legal navigation">
-                        <ul>
-                            <li><a href="privacy.html">Privacy Policy</a></li>
-                            <li><a href="terms.html">Terms of Service</a></li>
-                            <li><a href="accessibility.html">Accessibility Statement</a></li>
-                            <li><a href="copyright.html">Copyright &amp; Licenses</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer-section">
-                    <h2>Connect</h2>
-                    <div class="social-links">
-                        <a href="https://twitter.com" aria-label="Follow us on Twitter" target="_blank" rel="noopener noreferrer">
-                            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                                <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                            </svg>
-                        </a>
-                        <a href="https://facebook.com" aria-label="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
-                            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                                <path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="https://instagram.com" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
-                            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                                <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 FlowTrack. All rights reserved.</p>
-                <p>See our <a href="copyright.html">Copyright &amp; Licenses</a> page for media attributions.</p>
-            </div>
+        <div class="card premium">
+          <h3>Premium</h3>
+          <p class="price">€7.99 / Monat</p>
+          <ul>
+            <li>Unbegrenzte Arbeitsbereiche</li>
+            <li>Team-Kollaboration</li>
+            <li>Produktivitätsanalysen</li>
+            <li>Priorisierter Support</li>
+          </ul>
+          <button>Abonnieren</button>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <script src="js/main.js"></script>
+  <footer>
+    <p>© 2025 FlowTech Innovations GmbH — Alle Rechte vorbehalten.</p>
+  </footer>
 </body>
 </html>
