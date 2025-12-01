@@ -5,7 +5,7 @@
 ========================== */
 :root {
   --primary: #0052CC;
-  --primary-dark: #003d99;
+  --primary-dark: #2997ce;
   --accent: #36B37E;
   --accent-dark: #2a8f63;
   --text-dark: #172B4D;
@@ -13,8 +13,13 @@
   --gray-border: #E1E1E1;
   --shadow-soft: 0 4px 12px rgba(0,0,0,0.12);
   --shadow-medium: 0 6px 20px rgba(0,0,0,0.16);
-  --radius: 14px;
+  --radius: 8px;
   --transition: 0.25s ease;
+  --h1-size: 40px;
+  --h2-size: 32px;
+  --h3-size: 24px;
+  --body-size: 16px;
+  --label-size: 14px;
   font-size: 16px;
 }
 
@@ -22,11 +27,19 @@
    Global Styles
 ========================== */
 html, body {
-  margin: 0;
-  padding: 0;
-  font-family: "Inter Tight", sans-serif;
-  color: var(--text-dark);
-  background: white;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter Tight", sans-serif;
+    color: var(--text-dark);
+    background: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
@@ -34,11 +47,15 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-main.page {
-  padding: 30px 20px;
+main {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 100px;
   animation: fadeIn 0.4s ease;
 }
 
@@ -54,7 +71,7 @@ main.page {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 25px;
+  padding: 20px 80px;
   background: #fff;
   box-shadow: var(--shadow-soft);
   position: sticky;
@@ -89,28 +106,34 @@ main.page {
    Hero Section
 ========================== */
 .hero {
-  min-height: 50vh;
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 90%);
-  color: white;
-  padding: 100px 25px;
+  padding: 100px 0;
+  background-image: url('../fotos/6.jpg');
+  background-size: cover;
+  background-position: center;
   text-align: center;
-  border-radius: 0px 0px 50px 50px;
-  box-shadow: var(--shadow-soft);
+  justify-items: center;
 }
 
 .hero h1 {
-  font-size: 4.8rem;}
+  font-size: 80px;
+  font-weight: 400;
+  margin: 0;
+}
 
+.hero .highlighted {
+    color: var(--primary);
+  }
 .hero p {
+  font-family: "satoshi", sans-serif;
   font-size: 1.2rem;
   max-width: 600px;
-  margin: 0 auto 25px;
+  color: #292d2e;
 }
 
 .cta-btn {
-  background: white;
-  color: var(--primary);
-  padding: 12px 24px;
+  background:var(--primary);
+  color: white;);
+  padding: 14px 24px;
   border-radius: var(--radius);
   font-weight: bold;
   display: inline-block;
@@ -126,8 +149,17 @@ main.page {
    Pricing Section
 ========================== */
 .pricing-section {
-  padding: 60px 20px;
   text-align: center;
+  margin: 100px 0;
+  
+}
+
+.pricing-section h1 {
+  font-size: 48px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 .pricing-grid {
@@ -221,4 +253,18 @@ footer {
   text-align: center;
   margin-top: 40px;
   border-top: 1px solid var(--gray-border);
+}
+
+p{
+font-family: "Inter", sans-serif;
+font-size: var(--body-size);
+color: #292d2e;
+max-width: 600px;
+}
+
+h1 {
+font-size: var(--h1-size);
+font-weight: 500;
+color: #black;
+max-width: 800px;
 }
